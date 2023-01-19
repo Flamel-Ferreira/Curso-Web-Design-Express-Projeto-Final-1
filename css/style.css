@@ -12,6 +12,7 @@
 .centralizer{
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 2%;
 }
 
 .adjuster{
@@ -34,6 +35,31 @@ a{
 }
 
 /* header */
+
+header{
+  background-color: #ccc;
+}
+
+header .adjuster{
+  height: 60px;
+  align-items: center;
+}
+.logo{
+  width: 50%;
+}
+.menu_desktop{
+  width: 50%;
+}
+.menu_desktop ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu_desktop ul li{
+  list-style-type:none;
+}
+
+
 /* main */
   /* section 1 */
   /* section 2 */
