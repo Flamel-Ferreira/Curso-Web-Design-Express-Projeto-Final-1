@@ -10,12 +10,16 @@
 
 /* Default Stylizations */
 .centralizer{
+  width: 100%;
+  height: 100%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 2%;
 }
 
 .adjuster{
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -73,6 +77,32 @@ a{
 
 /* main */
   /* section 1 */
+    .section_1{
+      width: 100%;
+      height: 600px;
+      position: relative;
+      background: rgba(0, 0, 0, 0.6) url(/assets/images/bg1.jpg) no-repeat center center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    .section_1 .adjuster{
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .section_1 .adjuster h2{
+      font-size: 30px;
+      color: #52aaa7;
+    }
+
+    .section_1 .adjuster p{
+      font-size: 18px;
+      color: white;
+      text-align: justify;
+      font-weight: lighter;
+    }
   /* section 2 */
   /* section 3 */
 /* footer */
