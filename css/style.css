@@ -38,6 +38,15 @@ a{
   text-decoration: none;
 }
 
+h2.line_top::before{
+  content: "";
+  height: 5px;
+  background-color: #52aaa7;
+  position: absolute;
+  transform: translateY(-5px);
+  border-radius: 20px;
+}
+
 /* header */
 
   header{
@@ -78,8 +87,8 @@ a{
 /* main */
   /* section 1 */
     .section_1{
-      width: 100%;
-      height: 600px;
+      width: 100%;  
+      padding: 100px 0;
       position: relative;
       background: rgba(0, 0, 0, 0.6) url(/assets/images/bg1.jpg) no-repeat center center;
       background-size: cover;
@@ -104,6 +113,50 @@ a{
       font-weight: lighter;
     }
   /* section 2 */
+
+      .section_2  .adjuster{
+        padding: 30px 0; 
+      }
+
+      .section_2 .differentials h2{
+        color: #52aaa7;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      .section_2 .differentials h2.line_top::before{
+        width: 100px;
+        
+      }
+
+      .section_2 .icons_differentials{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .section_2 .icons_differentials .box_icons_single{
+        margin-top:30px;
+        padding: 30px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+      }
+
+      .section_2 .icons_differentials .box_icons_single i{
+        color:#295f74
+      }
+
+      .section_2 .icons_differentials .box_icons_single h3{
+        margin: 20px 0;
+      }
+
+      .section_2 .icons_differentials .box_icons_single p{
+        color: #646464;
+        font-weight: 400;
+        text-align: justify;
+      }
+
   /* section 3 */
 /* footer */
 
