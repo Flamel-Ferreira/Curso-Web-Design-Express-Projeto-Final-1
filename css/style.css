@@ -21,7 +21,13 @@
   width: 100%;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.w66{
+  width: 65%;
+  text-align: center;
 }
 
 .w50{
@@ -34,10 +40,16 @@
   text-align: center;
 }
 
+
 a{
   text-decoration: none;
 }
 
+h2.line_top{
+  color:#52aaa7;
+  font-size: 24px;
+  font-weight: 400;
+}
 h2.line_top::before{
   content: "";
   height: 5px;
@@ -112,22 +124,19 @@ h2.line_top::before{
       text-align: justify;
       font-weight: lighter;
     }
+
   /* section 2 */
 
       .section_2  .adjuster{
         padding: 30px 0; 
       }
 
-      .section_2 .differentials h2{
-        color: #52aaa7;
-        font-size: 24px;
-        font-weight: 400;
+      .section_2 .differentials h2.line_top{
         text-align: center;
       }
 
       .section_2 .differentials h2.line_top::before{
         width: 100px;
-        
       }
 
       .section_2 .icons_differentials{
@@ -158,13 +167,82 @@ h2.line_top::before{
       }
 
   /* section 3 */
+      .section_3{
+        background-color:rgb(228, 228, 228);
+      }
+
+      .section_3 .adjuster{
+        justify-content:space-between;
+        padding-bottom: 30px;
+      }
+      .section_3 .sobre_equipe,.sobre_empresa{
+        text-align: left;
+        margin-top:30px;
+      }
+
+      .section_3 h2.line_top{
+        font-weight: 500;
+      }
+
+      .section_3 h2.line_top::before{
+        width:60px;
+      }
+
+      .section_3 .box_member_single{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .section_3 .box_member_single .box_image{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .section_3 .box_member_single .box_image img{
+        max-width: 100%;        
+      }
+
+      .section_3 .box_member_single .box_text{
+        text-align: left;
+        font-size: 18px;
+      }
+
+      .section_3 .sobre_equipe .saiba_mais_button{
+        display: inline-block;
+        margin-top:50px;
+        padding: 15px 35px;
+        background-color:#52aaa7;
+        color: white;
+      }
+
+      .section_3 .sobre_equipe .saiba_mais_button:hover{
+        background-color:#479693;
+        cursor: pointer;
+      }
+
+
+      .section_3 .sobre_empresa p{
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: justify;
+      }
+      
+  /* Seção 4 */
+      
+      
 /* footer */
 
 /* responsive */
 @media screen and (max-width: 1024px) {}
 
 @media screen and (max-width:768px){
-  .w33, .w50{
+  .w33, .w50, .w66{
     width:100%;
   }
 }
