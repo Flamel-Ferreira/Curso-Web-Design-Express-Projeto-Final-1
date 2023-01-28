@@ -234,8 +234,47 @@ h2.line_top::before{
       }
       
   /* Seção 4 */
+      .section_4{
+        background-color: #479693;
+      }
+
+      .section_4 .inscreva,.formulario{
+        margin: 20px 0;
+      }
+      .section_4 .inscreva{
+        color:white;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
       
-      
+      .section_4 input[type="text"]{
+        width: calc(100% - 120px);
+        height: 40px;
+        background-color: white;
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 0 10px;
+        outline: none;
+      }
+
+      .section_4 input[type="submit"]{
+        width: 120px;
+        height:40px;
+        background-color: #1d6c64;
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+        color: white;
+        font-weight: lighter;
+        font-size: 20px;
+      }
+
+      .section_4 input[type="submit"]:hover{
+        background-color: #12443f;
+      }
+
 /* footer */
 
 /* responsive */
