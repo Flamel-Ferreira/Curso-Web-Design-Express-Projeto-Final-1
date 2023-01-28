@@ -301,6 +301,40 @@ h2.line_top::before{
         text-align: left;
       }
 /* footer */
+  .footer_1{
+    background-color:#52aaa7;
+    color: white;
+    padding-bottom: 30px;
+  }
+  .footer_1 .aonde_estamos,.links_uteis,.redes_sociais{
+    margin-top: 30px;
+
+  }
+  .footer_1 a{
+    color: white;
+  }
+
+  .footer_1 .links_uteis a{
+    text-decoration: underline;
+  }
+
+  .footer_1 .redes_sociais a{
+    padding:10px;
+    font-size: 30px;
+  }
+
+  .footer_1 p{
+    margin-top: 10px;
+  }
+
+
+  .footer_2{
+    background-color: #479693;
+    color:white;
+    padding:10px;
+    font-size:14px;
+    font-weight:100;
+  }
 
 /* responsive */
 @media screen and (max-width: 1024px) {}
