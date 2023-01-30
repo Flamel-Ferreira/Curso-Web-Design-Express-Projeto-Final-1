@@ -30,26 +30,41 @@
 
 </head>
 <body>
+  
   <header>
     <div class="centralizer">
       <div class="adjuster">
+
         <div class="logo">
-          <a href="">
-            Danki Code
-          </a>
+          <a href="">Danki Code</a>
         </div><!--logo-->
-        <div class="menu_desktop">
+
+        <nav class="menu_desktop">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="">Contato</a></li>
+            <li class="selected"><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
           </ul>
-        </div><!--menu-->
+        </nav><!--menu_desktop-->
+
+        <nav class="menu_mobile">
+          <h2>
+            <i class="fa fa-bars"></i>
+            <i class="fa-solid fa-circle-xmark hide"></i>
+          </h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="selected"><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav><!--menu_mobile-->
+
       </div><!--adjuster-->
     </div><!--centralizer-->
   </header>
+  <div class="space"></div>
   <main>
-
+   
   </main>
   <footer class="footer_1">
     <div class="centralizer">
@@ -85,5 +100,14 @@
     </div><!--centralizer-->
   </footer><!--footer_2-->
   
+  <script>
+    $('.menu_mobile i').click(function(){
+      $('.menu_mobile ul').slideToggle();
+    })
+
+    $('.menu_mobile i').click(function(){
+      $('.menu_mobile i').toggle('hide')
+    })
+  </script>
 </body>
 </html>
