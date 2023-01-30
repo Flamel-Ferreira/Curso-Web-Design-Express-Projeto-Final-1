@@ -65,8 +65,6 @@ h2.line_top::before{
 
 /* header */
 
-  
-
   header{
     background-color: #ccc;
     position: fixed;
@@ -176,6 +174,34 @@ h2.line_top::before{
       font-weight: lighter;
     }
 
+
+  /* section 1 sobre */
+
+    .section_1_sobre{
+      padding: 50px;
+      background: rgba(0, 0, 0, 0.6) no-repeat center center;
+      background-size: cover;
+      background-blend-mode: multiply;;
+    }
+
+    .section_1_sobre .adjuster{
+      justify-content: start;
+    }
+
+    .section_1_sobre .line_top{
+      font-size: 32px;
+    }
+
+    .section_1_sobre .line_top::before{
+      width: 30px;
+    }
+
+    .section_1_sobre p{
+      margin-top:15px;
+      text-align: justify;
+      color:white;
+      font-size: 18px;
+    }
   /* section 2 */
 
       .section_2  .adjuster{
