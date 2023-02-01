@@ -25,19 +25,20 @@
   justify-content: space-evenly;
 }
 
+.center{
+  text-align: center;
+}
+
 .w66{
   width: 65%;
-  text-align: center;
 }
 
 .w50{
   width:45%;
-  text-align: center;
 }
 
 .w33{
   width: 30%;
-  text-align: center;
 }
 
 
@@ -485,6 +486,53 @@ h2.line_top::before{
       .section_5 .card_single p{
         font-size: 16px;
         text-align: left;
+      }
+
+  /* section 5 sobre */
+      .section_5_sobre{
+        background-color: rgb(226, 224, 224);
+        padding-bottom: 30px;
+      }
+      .section_5_sobre .adjuster{
+        justify-content: space-between;
+      }
+      .section_5_sobre .imagem_do_dia{
+        height: 100%;
+        position: relative;
+      }
+      .section_5_sobre .imagem_do_dia, .nossa_historia{
+        margin-top: 30px;
+      }
+
+      .section_5_sobre h2.line_top::before{
+        width:100px;
+      }
+      .section_5_sobre .cartao_com_texto{
+        margin-top:30px;
+      }
+
+      .section_5_sobre .imagem_do_dia img{
+        width:100%;
+      }
+
+      .section_5_sobre .imagem_do_dia h3{
+        display: inline-block;
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        text-align: right;
+        padding: 10px;
+        border-radius: 10px;
+        color:white;
+        font-size:18px;
+        background-color:rgb(219, 219, 219, 0.3);
+      }
+
+
+      .section_5_sobre .nossa_historia p{
+        margin-top: 15px;
+        text-align: justify;
+
       }
 /* footer */
   .footer_1{
