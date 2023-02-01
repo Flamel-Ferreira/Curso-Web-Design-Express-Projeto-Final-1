@@ -46,6 +46,8 @@ a{
   text-decoration: none;
 }
 
+main{min-height: 1100px;}
+
 .clear{clear:both}
 
 .hide{display: none;}
@@ -203,6 +205,54 @@ h2.line_top::before{
       color:white;
       font-size: 18px;
     }
+  /* section 1 contato */
+    .section_1_contato .inputs, .contato_textos{
+      padding: 30px;
+    }
+
+    .section_1_contato .inputs{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    } 
+    .section_1_contato .inputs input, textarea{
+      width:100%;
+      padding:15px;
+      background-color: #DDDDDD;
+      border-radius:5px;
+      border: none;
+    }
+    .section_1_contato input[type="submit"]{
+      background-color:#52aaa7;
+      color:white;
+    }
+
+    .section_1_contato textarea{
+      resize: vertical;
+    }
+
+    .section_1_contato input[type="submit"]:hover{
+      background-color:#3b8380;
+    }
+
+    .section_1_contato .contato_textos, .telefone_boxes{
+      display: flex;
+      flex-direction:column;
+      gap:15px;
+    }
+
+    .section_1_contato .contato_textos>p{
+      font-size: 18px;
+      color:rgb(97, 97, 97)
+    }
+
+    .section_1_contato .telefone_box_single{
+      padding: 12px;
+      background-color:#52aaa7;
+      color: white;
+      border-radius:8px;
+    }
+
   /* section 2 */
 
       .section_2  .adjuster{

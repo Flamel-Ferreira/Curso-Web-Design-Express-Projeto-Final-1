@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+  
+    <!-- Meta tag SEO -->
+    <meta name="description" content="Página de teste de habilidade CSS e HTML">
+    <meta name="keywords" content="HTML, CSS, WebDesign">
+    <meta name="author" content="Flamel Ferreira">
+
+  <!-- Title -->
+  <title>Projeto Web Design Express</title>
+
+  <!-- CDN Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+
+  <!-- CDN jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Link Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Link Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="centralizer">
+      <div class="adjuster">
+        <div class="logo">
+          <a href="index.html">Danki Code</a>
+        </div><!--logo-->
+        <nav class="menu_desktop">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li class="selected"><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav><!--menu_desktop-->
+        <nav class="menu_mobile">
+          <h2>
+            <i class="fa fa-bars"></i>
+            <i class="fa-solid fa-circle-xmark hide"></i>
+          </h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li class="selected"><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav><!--menu_mobile-->
+      </div><!--adjuster-->
+    </div><!--centralizer-->
+  </header>
+
+  <div class="space"></div>
+
+  <main>
+   <section class="section_1_sobre" style="background-image: url(/assets/images/bg1.jpg)">
+    <div class="centralizer">
+      <div class="adjuster">
+        <h2 class="line_top">Contato</h2>
+        <p>Entre em contato conosco para obter mais informações sobre nossos serviços, fazer perguntas ou simplesmente compartilhar seus pensamentos. Nossa equipe está sempre pronta para responder a todas as perguntas e comentários, e estamos ansiosos para ouvir de você. Com um formulário de contato fácil de usar, é fácil entrar em contato conosco e obter uma resposta rápida. Não hesite em entrar em contato conosco hoje mesmo!</p>
+      </div><!--adjuster-->
+    </div><!--centralizer-->
+   </section><!--section_1_sobre-->
+
+   <div class="section_1_contato">
+     <div class="centralizer">
+      <div class="adjuster">
+
+        <form method="post" class="inputs w66">
+          <h3>Entre em contato, nós responderemos assim que possível.</h3>
+          <input class="w50" type="text" placeholder="Insira seu nome completo..." name="nome_completo" required>
+          <input type="email" placeholder="Insira seu email..." name="email" required>
+          <textarea name="mensagem" placeholder="Insira sua mensagem..." rows="10" required></textarea>
+          <input type="submit" value="Enviar!" name="enviar" required>
+        </form><!--inputs-->
+        <div class="contato_textos w33 center">
+          <h4><i class="fa-solid fa-comment"></i> Fale com a nossa Equipe!</h4>
+          <p>Estamos disponíveis nos seguintes números:</p>
+
+          <div class="telefone_boxes">
+            <div class="telefone_box_single">
+              <p><i class="fa-solid fa-phone"></i>  (48) 9 9901-3620</p>
+            </div><!--telefone_box_single-->
+            <div class="telefone_box_single">
+              <p><i class="fa-solid fa-phone"></i>  (48) 9 9901-3620</p>
+            </div><!--telefone_box_single-->
+            <div class="telefone_box_single">
+              <p><i class="fa-solid fa-phone"></i>  (48) 9 9901-3620</p>
+            </div><!--telefone_box_single-->
+          </div>
+
+        </div><!--contato_textos-->
+      </div><!--adjuster-->
+     </div><!--centralizer-->
+   </div><!--section_1_contato-->
+
+  </main>
+  <footer class="footer_1">
+    <div class="centralizer">
+      <div class="adjuster">
+        <div class="aonde_estamos w33 center">
+          <h3>Aonde Estamos</h3>
+          <p><i class="fa-solid fa-location-dot"></i> Rua desembargador F. Bastos</p>
+          <p><i class="fa-solid fa-phone"></i> (48) 9 9901-3620</p>
+        </div><!--aonde_estamos w33-->
+
+        <div class="links_uteis w33 center">
+          <h3>Links Úteis</h3>
+          <p><a href="">Danki Code</a></p>
+          <p><a href="">W3Schools</a></p>
+        </div><!--links_uteis w33-->
+
+        <div class="redes_sociais w33 center">
+          <h3>Conecte-se Conosco</h3>
+          <p>
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </p>
+
+        </div><!--redes_sociais w33-->
+      </div><!--adjuster-->
+    </div><!--centralizer-->
+  </footer><!--footer_1-->
+  <footer class="footer_2">
+    <div class="centralizer">
+      <div class="adjuster">
+        <h3>Todos os direitos Reservados</h3>
+      </div><!--adjuster-->
+    </div><!--centralizer-->
+  </footer><!--footer_2-->
+  
+  <script>
+    $('.menu_mobile i').click(function(){
+      $('.menu_mobile ul').slideToggle();
+    })
+
+    $('.menu_mobile i').click(function(){
+      $('.menu_mobile i').toggle('hide')
+    })
+  </script>
+</body>
+</html>
