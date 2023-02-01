@@ -327,7 +327,52 @@ h2.line_top::before{
         font-size: 18px;
         text-align: justify;
       }
+
+    /* Section 3 Sobre */
+
+      .section_3_sobre{
+        padding: 30px;
+        text-align: center;
+        background-image: url(/assets/images/bg1.jpg);
+        background-color: rgba(0, 0, 0, 0.6);
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+      }
+
+      .section_3_sobre h2{
+        color:#52aaa7;
+        font-size:26px;
+        font-weight:600;
+      }
+
+      .section_3_sobre p{
+        text-align: justify;
+        color: white;
+        margin-top: 30px;
+        font-size:18px;
+      }
       
+      .section_3_sobre h3{
+        border: 1px solid #52aaa7;
+        padding: 10px 24px;
+        border-radius: 5px;
+        color:#52aaa7;
+        transition:0.2s ease-in;
+
+      }
+
+      .section_3_sobre a{
+        margin-top:30px;
+      }
+
+      .section_3_sobre a:hover h3{
+
+        padding: 10px 30px;
+        /* color:white; */
+        transition:0.2s ease-in;
+      }
+
   /* Seção 4 */
       .section_4{
         background-color: #479693;
